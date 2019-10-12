@@ -15,6 +15,7 @@ const GoalInput = props => {
                     placeholder="enter something"
                     style={styles.input}
                     onChangeText={goalInputHandler}
+                    value={enteredGoal}
                 />
                 <View style={styles.buttonContainer}>
                     <View style={styles.button}>
