@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <TextInput placeholder='enter something' style={styles.input}/>
+        <TextInput placeholder='enter something' style={styles.input} />
       </View>
       <Text>{outputText}</Text>
       <Button title='Change Text' onPress={() => setOutputText('we just changed the text')} />
@@ -16,21 +16,18 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 50
   },
   input: {
-    padding : 10,
+    padding: 10,
     width: '80%',
-    borderWidth:1,
+    borderWidth: 1,
     borderColor: 'blue',
   },
   inputContainer: {
-    flexDirection : 'row',
+    flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems:'center',
+    alignItems: 'center',
   },
 });
 ``
